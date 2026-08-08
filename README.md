@@ -69,7 +69,7 @@ A multi-stage edge detection technique that produces clean and thin edges.
 ---
 ## programm
 ## EDGE-DETECTION
-    •SOBEL EDGE DETECTOR
+    ### •SOBEL EDGE DETECTOR
 ```python
 import cv2
 import numpy as np
@@ -110,10 +110,12 @@ plt.axis('off'); plt.imshow(sobel_combined, cmap='gray' ); plt.title('sobel_comb
 ```
 ## output
 <img width="1051" height="779" alt="Screenshot 2026-08-08 192206" src="https://github.com/user-attachments/assets/2de39d51-72a9-4959-8ac8-5bb7d899fbc2" />
+
 ## LAPLACIAN EDGE DETECTOR
 ```python
 # Convert the image to grayscale
 gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
 # Apply Laplacian operator
 laplacian = cv2.Laplacian(gray_image, cv2.CV_64F)
 plt.figure(figsize = (12, 16))
@@ -121,10 +123,14 @@ plt.subplot(121); plt.axis('off'); plt.imshow(gray_image, cmap='gray'); plt.titl
 
 plt.subplot(122);plt.imshow(laplacian, cmap='gray');plt.axis('off'); plt.title('Output Image (laplacian)');
 ```
+
 ## output
 <img width="1034" height="378" alt="Screenshot 2026-08-08 192221" src="https://github.com/user-attachments/assets/aea7cf5f-fd21-4a99-883e-59634aa9e560" />
+
 ## CANNY EDGE DETECTOR
+
 ```python
+
 img = cv2.imread('urban.jpg')
 
 # Convert to grayscale.
@@ -136,6 +142,7 @@ plt.figure(figsize = (12,16))
 plt.subplot(221); plt.axis("off"); plt.imshow(img[:,:,::-1]); plt.title('Original') 
 plt.subplot(222); plt.axis("off"); plt.imshow(img_gray, cmap='gray');      plt.title('Grayscale')
 ```
+
 ## output
 <img width="1098" height="355" alt="Screenshot 2026-08-08 192301" src="https://github.com/user-attachments/assets/0ae7c31d-ea99-4f5c-b207-12491cc93f68" />
 
