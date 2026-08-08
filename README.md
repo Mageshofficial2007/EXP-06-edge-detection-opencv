@@ -1,1 +1,1 @@
-# EXP---06-edge-detection-opencv
+# EXP-06-edge-detection-opencv
